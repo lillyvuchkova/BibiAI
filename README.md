@@ -44,4 +44,11 @@ BiBi Agent isn't just a chatbot; it is a **Conversion Engine**.
 This project moves the needle from **Awareness** to **Retention**. It demonstrates a deep understanding of user psychology, technical constraints in emerging markets, and the power of the Binance brand.
 
 ---
+---
+
+## 🎙️ Dev Notes: Why I built this
+I was standing at the **Money Expo Mexico** booth when I saw an older gentleman struggling to find the "Deposit" button because the venue's neon lights were reflecting on his screen, and the Wi-Fi was crawling. 
+
+That’s when it hit me: We don't need more documentation; we need a **friend in the app.** BiBi Agent is my attempt to take the stress out of the "First Trade" experience. It’s not just code—it’s about making sure crypto is accessible to everyone, regardless of their technical background or the venue's internet speed.
+
 *Created by Lilia Vuchkova for the OpenClaw - Binance Social Contest 2026.*
