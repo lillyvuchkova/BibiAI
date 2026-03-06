@@ -31,6 +31,12 @@ BiBi Agent isn't just a chatbot; it is a **Conversion Engine**.
 * **Visual Stack:** `playwright-vision` for real-time UI analysis.
 * **Deployment:** Telegram API (Optimized for 3G/Saturated LTE networks).
 
+### 🔄 Logical Workflow
+1. **User Input** (Text/Image) ➡️ 
+2. **Context Check** (Is Wi-Fi slow?) ➡️ 
+3. **Vision Analysis** (Identify UI button) ➡️ 
+4. **Resilient Response** (Encouragement + Direct Link)
+
 ---
 
 ## 🚀 Strategic Roadmap (Scaling Global)
@@ -40,8 +46,20 @@ BiBi Agent isn't just a chatbot; it is a **Conversion Engine**.
 
 ---
 
-## 👨‍💻 Why this matters
-This project moves the needle from **Awareness** to **Retention**. It demonstrates a deep understanding of user psychology, technical constraints in emerging markets, and the power of the Binance brand.
+## 🚀 Why BiBi Agent Wins
+BiBi isn't just a chatbot; it’s a **Conversion Engine**. 
+
+### ⚡ Powered by Gemini 2.0 Flash
+We leverage the sub-second reasoning of Gemini 2.0 to provide **instant UI guidance**. When a user at an expo is confused, they don't want to wait 10 seconds for an LLM to "think." They need an answer *now*.
+
+### 📊 Projected Business Impact
+| Feature | Problem Solved | Business Value |
+| :--- | :--- | :--- |
+| **Vision AI** | KYC Abandonment | +35% Onboarding Completion |
+| **Lite-Links** | Dead Zones/Bad Wi-Fi | 0% "Store Timeout" Drops |
+| **Lead Scoring** | Lost VIPs | Real-time Institutional Capture |
+
+> "BiBi turns a frustrated person with a phone into a verified Binance user in under 3 minutes."
 
 ---
 ---
