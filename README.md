@@ -1,72 +1,150 @@
-# 🤖 BiBi Agent: The High-Conversion Event Concierge
-> **Redefining the "Last Mile" of Crypto Onboarding through OpenClaw & Vision AI.**
-
-## 📑 Executive Summary
-During **Money Expo Mexico 2026**, a critical gap was identified: the transition from "Brand Interest" to "Verified User" is broken in high-friction environments. **BiBi Agent** is an innovative AI solution that transforms Binance's iconic mascot into a proactive Field Agent. By leveraging **OpenClaw’s** visual reasoning, BiBi provides real-time, "Duolingo-style" guidance to eliminate user drop-off.
+# 🤖 BibiAI - Crypto Copilot for Binance
+> An AI assistant that helps users navigate Binance, understand crypto, and complete onboarding with confidence.
 
 ---
 
-## 🚩 The Challenge: The "Expo Friction"
-Field research at the Money Expo highlighted three systemic blockers:
-1. **Infrastructure Failure:** Saturated venue Wi-Fi prevents App Store/Play Store access.
-2. **Cognitive Overload:** The Binance ecosystem is powerful but can be intimidating for first-time users (UI Blindness).
-3. **Leads Leakage:** High-value institutional/business leads are often lost in the chaos of a physical booth.
+## Overview
+
+BibiAI is an assistant designed to improve the Binance user experience.
+
+Crypto platforms can feel overwhelming for new users. Bibi acts as a friendly AI guide that helps users understand crypto concepts, navigate the Binance interface, and complete important actions like verification, deposits, and first trades.
+
+Built for the **OpenClaw AI Contest**, Bibi combines conversational AI and visual reasoning to make crypto onboarding faster and more accessible.
 
 ---
 
-## 💡 The Solution: BiBi Agent
-BiBi Agent isn't just a chatbot; it is a **Conversion Engine**.
+## The Problem
 
-### 🛠️ Core Capabilities (Powered by OpenClaw)
-* **Vision-Guided Navigation:** Users upload a screenshot; BiBi uses Gemini 1.5 Flash to visually identify and circle the next required action (e.g., KYC steps or Card activation).
-* **Resilient Resource Delivery:** When standard stores fail, BiBi serves optimized, secure "Lite-Links" and APK mirrors via Telegram’s low-bandwidth protocol.
-* **Persistence Layer (The "Duo" Effect):** Using behavioral nudges, BiBi follows up with users who stall during the onboarding funnel, gamifying the path to "First Trade."
-* **Institutional Bridge:** Automated pre-qualification of Business/Broker leads, instantly notifying the Binance Angel team for high-priority human intervention.
+Many new crypto users struggle with:
 
----
+• Understanding complex crypto terminology  
+• Navigating the Binance interface  
+• Completing KYC verification steps  
+• Knowing what to do after creating an account  
 
-## 🏗️ Technical Architecture
-* **Framework:** OpenClaw v2.0
-* **Logic Engine:** `SOUL.md` driven personality & constraint system.
-* **Visual Stack:** `playwright-vision` for real-time UI analysis.
-* **Deployment:** Telegram API (Optimized for 3G/Saturated LTE networks).
-
-### 🔄 Logical Workflow
-1. **User Input** (Text/Image) ➡️ 
-2. **Context Check** (Is Wi-Fi slow?) ➡️ 
-3. **Vision Analysis** (Identify UI button) ➡️ 
-4. **Resilient Response** (Encouragement + Direct Link)
+This leads to high drop-off during the onboarding process.
 
 ---
 
-## 🚀 Strategic Roadmap (Scaling Global)
-* **Phase 1 (Immediate):** Deployment at regional Expos to reduce booth staff workload by 40%.
-* **Phase 2 (Predictive):** AI-driven friction detection—BiBi intervenes *before* a user asks for help if it detects "stalling" on a specific UI screen.
-* **Phase 3 (Physical Integration):** NFC-triggered BiBi sessions at every Binance physical touchpoint worldwide.
+## The Solution
+
+Bibi is an intelligent AI assistant that guides users through the Binance experience in real time.
+
+Instead of searching through documentation, users can simply ask Bibi questions or share screenshots of what they see.
+
+Bibi then explains the next step clearly and visually.
 
 ---
 
-## 🚀 Why BiBi Agent Wins
-BiBi isn't just a chatbot; it’s a **Conversion Engine**. 
+## Key Features
 
-### ⚡ Powered by Gemini 2.0 Flash
-We leverage the sub-second reasoning of Gemini 2.0 to provide **instant UI guidance**. When a user at an expo is confused, they don't want to wait 10 seconds for an LLM to "think." They need an answer *now*.
+### AI Crypto Explainer
+Explain any crypto concept in simple language.
 
-### 📊 Projected Business Impact
-| Feature | Problem Solved | Business Value |
-| :--- | :--- | :--- |
-| **Vision AI** | KYC Abandonment | +35% Onboarding Completion |
-| **Lite-Links** | Dead Zones/Bad Wi-Fi | 0% "Store Timeout" Drops |
-| **Lead Scoring** | Lost VIPs | Real-time Institutional Capture |
+Example:
 
-> "BiBi turns a frustrated person with a phone into a verified Binance user in under 3 minutes."
+User:  
+Explain Ethereum like I'm new to crypto.
+
+Bibi:  
+Ethereum is a blockchain platform that allows developers to build decentralized applications and smart contracts. It powers many crypto services like DeFi and NFTs.
 
 ---
+
+### Vision-Guided Navigation
+
+Users can upload screenshots of the Binance interface.
+
+Bibi analyzes the screen and highlights the next step required.
+
+Example:
+
+User uploads screenshot of Binance KYC page  
+Bibi responds with guidance and highlights the correct button.
+
 ---
 
-## 🎙️ Dev Notes: Why I built this
-I was standing at the **Money Expo Mexico** booth when I saw an older gentleman struggling to find the "Deposit" button because the venue's neon lights were reflecting on his screen, and the Wi-Fi was crawling. 
+### Step-by-Step Onboarding Guide
 
-That’s when it hit me: We don't need more documentation; we need a **friend in the app.** BiBi Agent is my attempt to take the stress out of the "First Trade" experience. It’s not just code—it’s about making sure crypto is accessible to everyone, regardless of their technical background or the venue's internet speed.
+Bibi walks new users through:
 
-*Created by Lilia Vuchkova for the OpenClaw - Binance Social Contest 2026.*
+• Account creation  
+• Identity verification (KYC)  
+• Depositing funds  
+• Making their first trade  
+
+This reduces onboarding friction and improves user confidence.
+
+---
+
+### Beginner-Friendly Crypto Education
+
+Users can ask questions like:
+
+• What is DeFi?  
+• What is staking?  
+• How does Bitcoin work?  
+
+Bibi explains concepts in clear and simple language.
+
+---
+
+## Example Interaction
+
+User:  
+How do I deposit crypto on Binance?
+
+Bibi:  
+To deposit crypto:
+
+1. Open the Binance app
+2. Tap **Wallet**
+3. Select **Deposit**
+4. Choose the crypto you want to deposit
+5. Copy the wallet address and send funds to it
+
+Always make sure the network matches the sending wallet.
+
+---
+
+## Technical Architecture
+
+Framework: OpenClaw  
+Visual reasoning: Vision-enabled AI model  
+Interface: Chat-based assistant (Telegram or web)  
+
+The assistant processes both text and images to provide contextual guidance.
+
+---
+
+## Future Binance Integration
+
+Bibi could be integrated directly into the Binance platform to provide:
+
+• Real-time portfolio explanations  
+• Smart onboarding guidance  
+• AI-powered help inside the app  
+• Personalized crypto education  
+
+The goal is to give every Binance user an **AI crypto guide**.
+
+---
+
+## Why This Matters
+
+Crypto adoption depends on usability.
+
+By combining conversational AI with visual guidance, Bibi reduces confusion and helps users take their first steps in crypto with confidence.
+
+---
+
+## Built for the OpenClaw AI Contest
+
+Bibi was created as a submission for the **Binance OpenClaw AI Assistant Contest**, which challenges developers to build tools that enhance the Binance user experience.
+
+---
+
+## Creator
+
+Created by **Lilia Vuchkova**  
+Creative technologist exploring AI, design, and crypto experiences.
