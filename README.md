@@ -1,6 +1,20 @@
 BibiAI - AI Crypto Copilot for Binance
 > An intelligent assistant that helps users navigate Binance, understand crypto, and complete onboarding with confidence.
 
+## Architecture
+
+User
+ ↓
+BibiAI Agent
+ ↓
+OpenClaw Framework
+ ↓
+Vision Analysis (Gemini)
+ ↓
+Action Triggers
+ ↓
+User Guidance
+
 ---
 
 # Overview
