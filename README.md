@@ -1,20 +1,6 @@
 BibiAI - AI Crypto Copilot for Binance
 > An intelligent assistant that helps users navigate Binance, understand crypto, and complete onboarding with confidence.
 
-## What BibiAI Does
-
-BibiAI is an AI assistant that helps users interact with the Binance ecosystem.
-
-It can:
-
-• Explain crypto concepts  
-• Guide users through Binance interfaces  
-• Analyze screenshots and highlight next actions  
-• Help new users complete onboarding  
-• Provide contextual help across the platform
-
-Instead of searching through documentation, users can simply ask BibiAI.
-
 ---
 
 # Overview
@@ -49,16 +35,19 @@ Users don't just need documentation — they need a **real-time AI guide that he
 BibiAI was designed to solve this problem.
 
 ---
+## What BibiAI Does
 
-# The Solution
+BibiAI is an AI assistant that helps users interact with the Binance ecosystem.
 
-BibiAI acts as a conversational AI guide for Binance users.
+It can:
 
-Users can ask questions or upload screenshots of their Binance interface.  
-BibiAI then explains what to do next in a simple and accessible way.
+• Explain crypto concepts  
+• Guide users through Binance interfaces  
+• Analyze screenshots and highlight next actions  
+• Help new users complete onboarding  
+• Provide contextual help across the platform
 
-The goal is to make crypto onboarding easier and reduce user confusion.
-
+Instead of searching through documentation, users can simply ask BibiAI.
 ---
 
 # Key Features
