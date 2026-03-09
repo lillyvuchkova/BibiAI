@@ -3,66 +3,115 @@ from openclaw.vision import GeminiVision
 from openclaw.core import ActionTriggers
 from openclaw.handlers import ConnectivityManager
 
-class BibiStrategicAgent(openclaw.Agent):
+
+class BibiAI(openclaw.Agent):
     """
-    BiBi Agent: High-Conversion Event Concierge
-    Optimized for Money Expo Mexico 2026.
+    BibiAI — AI Crypto Copilot for Binance
+    Built for the Binance OpenClaw AI Contest.
+
+    BibiAI helps users:
+    - Navigate the Binance interface
+    - Understand crypto concepts
+    - Complete onboarding steps
+    - Reduce friction during their first crypto experience
     """
+
     def __init__(self):
-        # Load the personality profile from SOUL.md
+
+        # Load personality and rules
         super().__init__(soul_path="SOUL.md")
-        
-        # Initialize high-performance Vision AI
+
+        # Vision reasoning engine
         self.vision_engine = GeminiVision(model="gemini-2.0-flash-exp")
+
+        # Network resilience for unstable environments
         self.network_monitor = ConnectivityManager(mode="resilient")
 
+    # ------------------------------------------------
+    # SCREENSHOT INTERFACE GUIDANCE
+    # ------------------------------------------------
+
     @ActionTriggers.on_image_upload
-    async def handle_onboarding_friction(self, image):
+    async def analyze_interface(self, image):
         """
-        Analyzes UI friction points using Computer Vision.
+        Analyze screenshots of Binance interfaces
+        and guide users through the next step.
         """
-        print("🔍 Analyzing real-time UI friction...")
-        
-        # Advanced prompt engineering to identify user blockers
+
+        print("Analyzing interface screenshot...")
+
         analysis = await self.vision_engine.process(
             image=image,
-            task="Identify UI blockers, button location (x,y), and provide Duolingo-style encouragement."
+            task="""
+            Identify important UI elements on the screen.
+            Detect the next action the user should take.
+            Provide clear step-by-step guidance.
+            """
         )
-        
+
         return {
             "action": "draw_overlay",
-            "message": f"Don't stop now! 🤖 {analysis['guidance']}",
-            "confidence_score": analysis['confidence']
+            "message": f"BibiAI guidance: {analysis['guidance']}",
+            "confidence_score": analysis["confidence"]
         }
 
-    @ActionTriggers.on_keyword(["internet", "wifi", "slow", "error", "store"])
-    async def resilient_delivery(self, user_context):
+    # ------------------------------------------------
+    # CONNECTIVITY RESILIENCE
+    # ------------------------------------------------
+
+    @ActionTriggers.on_keyword(["wifi", "internet", "slow", "network", "error"])
+    async def network_support(self, user_context):
         """
-        Bypasses app stores if venue network congestion is detected.
+        Detect network issues and provide alternative solutions.
         """
-        # Simulate real-time latency detection
+
         latency = self.network_monitor.check_venue_latency()
-        
-        if latency > 1500: # 1.5s ping is a critical threshold for events
+
+        if latency > 1500:
             return (
-                "🚨 I've detected high network congestion at the venue. "
-                "Don't waste time on the App Store. Here is the 'BiBi Lite-Mirror' "
-                "optimized for 3G/LTE connections: [binance-lite-mirror.apk] 🚀"
+                "It looks like the network connection is slow right now. "
+                "Try refreshing the Binance app or switching networks if possible. "
+                "If downloads are failing, I can guide you through the next steps manually."
             )
 
-    @ActionTriggers.priority_routing(keywords=["vip", "partner", "merchant", "institutional"])
-    async def lead_escalation(self, user_info):
+    # ------------------------------------------------
+    # BEGINNER SUPPORT
+    # ------------------------------------------------
+
+    @ActionTriggers.on_keyword(["what is", "how does", "explain", "crypto"])
+    async def crypto_explainer(self, user_question):
         """
-        Escalation protocol for high-value leads.
+        Provide beginner-friendly explanations of crypto concepts.
         """
-        # Instantly notify on-site Binance Angels via internal relay
-        await self.notify_human_support(
-            level="Priority_1",
-            message=f"High-value lead detected: {user_info.handle}. Requires physical assistance at the booth."
+
+        return (
+            "I'd be happy to help explain that. "
+            "Crypto can seem complicated at first, but I will break it down in simple terms."
         )
-        return "Excellent! I'm reaching out to a Binance specialist to assist you personally right here at the booth. 💛"
+
+    # ------------------------------------------------
+    # ONBOARDING GUIDANCE
+    # ------------------------------------------------
+
+    @ActionTriggers.on_keyword(["verify", "kyc", "deposit", "trade"])
+    async def onboarding_help(self, user_context):
+        """
+        Guide users through Binance onboarding steps.
+        """
+
+        return (
+            "Here is how you can continue:\n\n"
+            "1. Open the Binance app\n"
+            "2. Go to your profile section\n"
+            "3. Select verification or wallet depending on your goal\n\n"
+            "If you'd like, you can upload a screenshot and I will guide you visually."
+        )
+
 
 if __name__ == "__main__":
-    # Initialize the Agent in production mode with streaming enabled
-    bibi = BibiStrategicAgent()
+
+    # Initialize BibiAI agent
+    bibi = BibiAI()
+
+    # Run the assistant
     bibi.run(mode="production", stream=True)
