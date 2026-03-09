@@ -62,6 +62,24 @@ It can:
 • Provide contextual help across the platform
 
 Instead of searching through documentation, users can simply ask BibiAI.
+
+## Example Use Cases
+
+### New User Onboarding
+A beginner asks how to verify their account.  
+BibiAI explains the KYC process step by step.
+
+### Interface Guidance
+A user uploads a screenshot of the Binance trading interface.  
+BibiAI highlights the buy/sell panel and explains how to place a trade.
+
+### Crypto Learning
+A user asks what staking means.  
+BibiAI explains the concept in simple language.
+
+### Portfolio Understanding
+A user asks about their portfolio distribution.  
+BibiAI provides a simplified explanation of their allocation.
 ---
 
 # Key Features
