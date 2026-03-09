@@ -1,18 +1,70 @@
-# BiBi Agent: Functional Capabilities 🛠️
+# BibiAI Skills
 
-BiBi is equipped with specialized skills designed for high-friction event environments:
+BibiAI provides several capabilities designed to improve the crypto user experience.
 
-### 👁️ Vision Intelligence (`vision_ui_analysis`)
-* **Provider:** Gemini 2.0 Flash
-* **Capability:** Parses user-submitted screenshots to identify UI elements (buttons, forms, error messages).
-* **Logic:** Maps raw pixels to actionable instructions for the Binance App.
+---
 
-### 📶 Network Adaptive Delivery (`resilient_cdn`)
-* **Provider:** OpenClaw Connectivity Manager
-* **Capability:** Monitors local pings. If latency exceeds 1500ms, it triggers a "Lite-Mode" protocol.
-* **Output:** Serves direct `.apk` or `lite-links` to bypass congested App Stores.
+# Crypto Education
 
-### 🎯 High-Value Lead Scoring (`lead_priority_engine`)
-* **Provider:** Pattern Matching & NLP
-* **Capability:** Flags keywords (Merchant, VIP, Institutional) for immediate human intervention.
-* **Action:** Triggers a real-time notification to the nearest on-site Binance Angel.
+Explain crypto concepts in simple language.
+
+Examples:
+
+• Bitcoin  
+• Ethereum  
+• DeFi  
+• Staking  
+• NFTs
+
+---
+
+# Binance Navigation Guidance
+
+Help users understand how to navigate Binance features.
+
+Examples:
+
+• Depositing crypto  
+• Buying assets  
+• Account verification  
+• Wallet navigation
+
+---
+
+# Screenshot Interpretation
+
+Users can upload screenshots of crypto interfaces.
+
+BibiAI analyzes the screen and provides contextual guidance.
+
+Example:
+
+User uploads Binance trading screen →  
+BibiAI explains what each section means.
+
+---
+
+# Onboarding Assistance
+
+Guide new users through their first steps in crypto.
+
+Steps include:
+
+• Creating an account  
+• Completing KYC verification  
+• Depositing funds  
+• Making their first trade
+
+---
+
+# Conversational Support
+
+Users can ask questions naturally.
+
+Examples:
+
+• What is a crypto wallet?  
+• How do I buy Bitcoin?  
+• What does staking mean?
+
+BibiAI provides simple, structured answers.
