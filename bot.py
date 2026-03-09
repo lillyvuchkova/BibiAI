@@ -115,3 +115,33 @@ if __name__ == "__main__":
 
     # Run the assistant
     bibi.run(mode="production", stream=True)
+
+@ActionTriggers.on_keyword(["portfolio", "wallet", "allocation"])
+async def portfolio_explainer(self, user_context):
+    """
+    Explain portfolio composition in simple terms.
+    """
+
+    # Example simulated portfolio
+    portfolio = {
+        "BTC": 45,
+        "ETH": 30,
+        "AI Tokens": 25
+    }
+
+    return (
+        "Here is a simplified portfolio overview:\n\n"
+        f"BTC: {portfolio['BTC']}%\n"
+        f"ETH: {portfolio['ETH']}%\n"
+        f"AI Tokens: {portfolio['AI Tokens']}%\n\n"
+        "Insight: You have high exposure to AI-related assets."
+    )
+
+analysis = await self.vision_engine.process(
+    image=image,
+    task="""
+    Identify the interface shown in the screenshot.
+    Explain what each major section does.
+    Guide the user step by step on the next action.
+    """
+)
