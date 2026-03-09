@@ -178,6 +178,23 @@ BibiAI could be integrated directly into the Binance ecosystem to provide:
 The goal is to give every Binance user an **AI crypto guide**.
 
 ---
+# Clone the repository
+git clone https://github.com/lillyvuchkova/BibiAI.git
+
+# Move into the project
+cd BibiAI
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate environment
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the assistant
+python app.py
 
 # Creator
 
